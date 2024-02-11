@@ -1,0 +1,11 @@
+//import fonts
+//TODO import this from a font.scss
+@font-face {
+  font-family: "Big John";
+  src: local("Big John"), url("./assets/fonts/BIG\ JOHN.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Slim Joe";
+  src: local("Slim Joe"), url("./assets/fonts/Slim\ Joe.otf") format("opentype");
+}

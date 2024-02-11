@@ -1,6 +1,11 @@
+//import local styles
 @use "./styles/palette";
+@use "./styles/font";
 @use "./styles/sectionLayout";
+@use "./styles/breakpoints";
 
 body {
   margin: 0;
+  font-family: Big John, Slim Joe;
+  background-color: palette.$color-background;
 }
