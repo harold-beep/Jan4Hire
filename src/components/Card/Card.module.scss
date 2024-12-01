@@ -1,0 +1,9 @@
+@use '../../styles/palette' as *;
+
+.cardStyle{
+    width: fit-content;
+    margin: 12px;
+    padding: 16px 28px;
+    background-color: $color-background;
+    filter: drop-shadow(14px 12px 0 $color-secondary);
+}

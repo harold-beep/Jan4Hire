@@ -1,0 +1,42 @@
+@use "../../styles/palette" as *;
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-blend-mode: overlay;
+
+    // Right side gradient
+    background: linear-gradient(
+        180deg,
+        $color-background var(--bg-white, 60%),
+        $color-main var(--bg-main, 40%)
+    );
+}
+
+.container::before {
+    /* Left side gradient */
+    content: '';
+    position: absolute;
+    inset: 0;
+    right: 0;
+    width: 50%; /* Only take up half of the container */
+    z-index: -1;
+    background: linear-gradient(
+        0deg,
+        $color-background var(--bt-white, 95%),
+        $color-main var(--bt-main, 5%)
+    );
+}
+
+.centerContent {
+    z-index: 1; /* Ensure content is above the gradients */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

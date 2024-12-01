@@ -1,0 +1,27 @@
+@use '../../../styles/palette' as *;
+
+.skillCard {
+    display: flex;
+    padding: 4px 10px;
+    width: fit-content;
+    gap: 6px;
+    align-items: center;
+    background-color: $color-secondary;
+    filter: drop-shadow(8px 6px 0 $color-accent);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .icon {
+    font-size: 14px;
+    color: $color-background;
+  }
+  
+  .title {
+    color: $color-background;
+  }
+  

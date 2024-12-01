@@ -1,38 +1,12 @@
-@use "./palette";
+@use "./palette" as *;
 @use "./breakpoints";
 
-.container {
-  width: 100vw;
-  height: 100vh;
+.section {
   height: 100dvh;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.left-content {
-  flex: 0.5 1 auto;
-  height: 100vh;
-  height: 100dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right-content {
-  flex: 0.5 1 auto;
-  height: 100vh;
-  height: 100dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    180deg,
-    palette.$color-background 50%,
-    palette.$color-main 50%
-  );
-  @include breakpoints.breakpoint(xs) {
-    background-color: palette.$color-secondary;
-  }
+  scroll-snap-align: center;
+  z-index: 0;
 }

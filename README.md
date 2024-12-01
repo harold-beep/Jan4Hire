@@ -1,1 +1,1 @@
-<h1 align="center">Jan is your Front End Engineer!</h1>
+<h1 align="center">This is a portfolio website to showcase the skills</h1>

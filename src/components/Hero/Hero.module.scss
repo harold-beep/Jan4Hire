@@ -1,0 +1,28 @@
+@use '../../styles/palette' as *;
+
+.subContainerCenter {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        180deg,
+        $color-background var(--bg-white, 50%),
+        $color-main var(--bg-main, 50%)
+      );
+}
+
+.subContainer{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(
+        0deg,
+        $color-background var(--bt-white, 50%),
+        $color-main var(--bt-main, 50%)
+      );
+}
