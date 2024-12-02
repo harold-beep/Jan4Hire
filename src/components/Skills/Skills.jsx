@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import style from './Skills.module.scss';
 import { motion } from 'framer-motion';
-import Card from '../Card/Card';
 import {
   Design,
   DesignTools,
@@ -13,6 +12,7 @@ import {
   Tools,
 } from './List';
 import SkillCard from './SkillCard/SkillCard';
+import Card from '../UI/Card/Card';
 
 const Skills = () => {
   const dragConstraints = useRef(null);
@@ -25,8 +25,8 @@ const Skills = () => {
       <div className={style.subContainer}>
         <Card dragConstraint={dragConstraints}>
           <div className={style.skillContent}>
-            <h3>Jan the Designer</h3>
-            <p>I value functional minimal design for an effective user experience</p>
+            <h3 style={{ color: "#597e52" }}>Jan the Designer</h3>
+            <p>Prioritizing functional, minimal design to deliver an impactful user experience.</p>
             <div className={style.skillGroup}>
               <h5 style={{ textAlign: 'left' }}>Things I love designing:</h5>
               <div className={style.skillList}>
@@ -40,7 +40,7 @@ const Skills = () => {
               </div>
             </div>
             <div className={style.skillGroup}>
-              <h5 style={{ textAlign: 'left' }}>Things I love designing:</h5>
+              <h5 style={{ textAlign: 'left' }}>Tools I use to design:</h5>
               <div className={style.skillList}>
                 {DesignTools.map((design) => (
                   <SkillCard
@@ -57,10 +57,9 @@ const Skills = () => {
       <div className={style.subContainerCenter}>
         <Card dragConstraint={dragConstraints}>
           <div className={style.skillContent}>
-            <h3>Jan the Developer</h3>
+            <h3 style={{ color: "#597e52" }}>Jan the Developer</h3>
             <p>
-              I like to code things from scratch and enjoy bringing ideas to
-              life in the browser.
+              Enjoy coding from scratch and transforming ideas into reality within the browser.
             </p>
             <div className={style.skillGroup}>
               <h5 style={{ textAlign: 'left' }}>Languages I use:</h5>
