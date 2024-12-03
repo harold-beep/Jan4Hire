@@ -12,10 +12,10 @@ const Works = () => {
   const dragConstraints = useRef(null);
   
   const works = [
-    { img: iphone, alt: 'mockups', link: 'https://github.com/harold-beep', tooltip: 'Wireframing' },
-    { img: grapes, alt: 'branding', link: 'https://drive.google.com/drive/u/3/folders/16vi0cez-IYyj1tpuoaqedK2Gd-Un12Yx', tooltip: 'Branding Design' },
-    { img: mockup, alt: 'mockups', link: 'https://drive.google.com/drive/u/3/folders/16vi0cez-IYyj1tpuoaqedK2Gd-Un12Yx', tooltip: 'Mockup Design' },
-    { img: pomegranate, alt: 'mockup-website', link: 'https://github.com/harold-beep', tooltip: 'Prototyping' },
+    { img: iphone, alt: 'mockups', link: 'https://github.com/harold-beep', tooltip: 'Wireframes and Prototypes' },
+    { img: grapes, alt: 'branding', link: 'https://drive.google.com/drive/u/3/folders/16vi0cez-IYyj1tpuoaqedK2Gd-Un12Yx', tooltip: 'Branding Identity/ Design' },
+    { img: mockup, alt: 'mockups', link: 'https://drive.google.com/drive/u/3/folders/16vi0cez-IYyj1tpuoaqedK2Gd-Un12Yx', tooltip: 'Product Mockups' },
+    { img: pomegranate, alt: 'mockup-website', link: 'https://github.com/harold-beep', tooltip: 'Web Development' },
   ];
 
   return (
