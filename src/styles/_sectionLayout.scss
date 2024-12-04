@@ -1,7 +1,9 @@
 @use "./palette" as *;
 @use "./breakpoints";
+@use './grainEffect' as *;
 
 .section {
+  @include grain-effect(0.35);
   height: 100dvh;
   width: 100%;
   display: flex;

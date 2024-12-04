@@ -18,7 +18,7 @@ const Hero = () => {
       ref={dragConstraints}
     >
       <div 
-        className={`${style.subContainer}`}
+        className={style.subContainer}
         style={{
           '--bt-white': '95%',
           '--bt-main': '5%'
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
       </div>
       <div 
-        className={`${style.subContainerCenter}`}
+        className={style.subContainerCenter}
         style={{
           '--bg-white': '60%',
           '--bg-main': '40%'
